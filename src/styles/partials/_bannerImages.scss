@@ -1,5 +1,16 @@
 @media screen and (min-width:360px) {
     #ContenedorGeneral_BannerImages{
+        display: flex;
+    }
+
+    .ImageGrid{
+        width: 4rem;
+        height: 15rem;
+        object-fit:cover;
+        transition: .6s ease-in-out;
+    }
+    .ImageGrid:hover{
+        width: 8rem;
     }
 }
 

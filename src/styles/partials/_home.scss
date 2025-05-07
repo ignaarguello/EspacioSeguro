@@ -1,0 +1,121 @@
+@media screen and (min-width:360px) {
+    #ContenedorPrincipal_PageHome{
+        height: 100vh;
+        background-image: url(./images/fondo-2.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #ContenedorPrincipal_PageHome{
+        height: 100vh;
+        background-image: url(./images/fondo-4.png);
+      /*   background-image: url(./images/ayuda-1.png); */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+    }
+
+    /* Ambos */
+    .SubContenendores{
+        height: 100%;
+    }
+
+    /* 1 */
+    .SubContenendores:nth-child(1){
+        width: 45%;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.553);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 2 */
+    .SubContenendores:nth-child(2){
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-blend-mode: multiply;
+    }
+
+    #LogoPrincipal_Home{
+        width: 18rem;
+        height: 18rem;
+    }
+
+    #TituloEspacioDeAyuda{
+        color: gainsboro;
+        margin-top: 1rem;
+        font-weight: 100;
+        font-size: 2rem;
+    }
+
+    #Con_ContenidoPrincipal_Home_S2{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .4rem;
+        align-items: flex-start;
+        background-color: rgba(0, 0, 0, 0.653);
+        cursor: pointer;
+    }
+
+    #TituloQuienesSomos{
+        font-size: 3.2rem;
+        font-weight: 300;
+        color: var(--color--principal--);
+        margin: 1.5rem 0 1rem 1rem;
+        text-align: center;
+    }
+
+    #ParrafoAcercaDeNosotros{
+        font-size: 1.1rem;
+        color: whitesmoke;
+        line-height: 2rem;
+        font-weight: 300;
+        margin: .3rem 1rem 1rem 1rem;
+    }
+
+    #PieContenedor_Home_S2{
+        background-color: rgba(0, 0, 0, 0.660);
+        width: 100%;
+        height: 5rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+    }
+
+    #Subtitulo_LaDepresion-Yo{
+        font-size: .9rem;
+        font-weight: 200;
+    }
+
+    #PieDePagina_Home_S2{
+        position: absolute;
+        top: 92vh;
+        right: 3vh;
+        display: flex;
+        gap: .8rem;
+    }
+
+    .IconoRedSocial_Home{
+        color: gainsboro;
+        width: 2.7rem;
+        height: 2.5rem;
+        cursor: pointer;
+        transition: .4s ease-in-out;
+    }
+
+    .IconoRedSocial_Home:hover{
+        transform: scale(1.1);
+    }
+}

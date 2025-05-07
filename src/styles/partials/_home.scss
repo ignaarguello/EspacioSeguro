@@ -1,21 +1,29 @@
 @media screen and (min-width:360px) {
     #ContenedorPrincipal_PageHome{
         height: 100vh;
-        background-image: url(./images/fondo-2.png);
-        background-size: cover;
-        background-position: center;
     }
 }
 
 @media screen and (min-width:1440px) {
     #ContenedorPrincipal_PageHome{
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    #Contenedor-Vista1_PageHome{
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
         background-image: url(./images/fondo-4.png);
-      /*   background-image: url(./images/ayuda-1.png); */
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        display: flex;
+    }
+
+    #Contenedor-Vista2_PageHome{
+        min-height: 100vh;
+        display: grid;
     }
 
     /* Ambos */

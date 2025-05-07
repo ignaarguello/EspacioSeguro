@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 //Variables
 import Grid1 from '/images/grid/Grid1.png'
 import Grid2 from '/images/grid/Grid2.png'

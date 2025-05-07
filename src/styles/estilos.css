@@ -27,9 +27,20 @@
     background-attachment: fixed;
   }
   #Contenedor-Vista2_PageHome {
-    min-height: 100vh;
-    display: -ms-grid;
-    display: grid;
+    min-height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /* Ambos */
   .SubContenendores {
@@ -145,7 +156,7 @@
     gap: .8rem;
   }
   .IconoRedSocial_Home {
-    color: gainsboro;
+    color: white;
     width: 2.7rem;
     height: 2.5rem;
     cursor: pointer;
@@ -156,15 +167,32 @@
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .TituloIntroductorio {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    height: 5rem;
+    width: 90%;
+    margin-top: 3rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    color: gray;
+  }
+  .SpanTitulo_Home {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--color--principal--);
+  }
 }
 
 /* Page Home */
 @media screen and (min-width: 1440px) {
   #ContenedorGeneral_BannerImages {
     width: 55%;
-    height: 50%;
+    height: 25rem;
     justify-self: center;
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

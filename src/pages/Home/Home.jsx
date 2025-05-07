@@ -39,7 +39,9 @@ export default function Home() {
             </div>
             {/* Vista 2 */}
             <div id='Contenedor-Vista2_PageHome'>
+                <h3 className='TituloIntroductorio'><span className='SpanTitulo_Home'>Tu Espacio: </span>Bienvenido/a a un rincón seguro y confidencial. Aquí podés sentirte libre de explorar tus emociones, compartir tus experiencias y encontrar recursos que te acompañen en tu camino. No estás solo/a.</h3>
                 <BannerImages/>
+                <h3 className='TituloIntroductorio'><span className='SpanTitulo_Home'>Con Vos: </span>No estás en esto solo/a. Este sitio es una compañía en tu día a día, un lugar para recordarte tu fortaleza y ofrecerte apoyo cuando más lo necesitás. Juntos podemos transitar este camino</h3>
             </div>
         </div>
     )

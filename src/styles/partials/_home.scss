@@ -22,8 +22,11 @@
     }
 
     #Contenedor-Vista2_PageHome{
-        min-height: 100vh;
-        display: grid;
+        min-height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Ambos */
@@ -116,7 +119,7 @@
     }
 
     .IconoRedSocial_Home{
-        color: gainsboro;
+        color: white;
         width: 2.7rem;
         height: 2.5rem;
         cursor: pointer;
@@ -125,5 +128,22 @@
 
     .IconoRedSocial_Home:hover{
         transform: scale(1.1);
+    }
+
+    .TituloIntroductorio{
+        font-size: 1.5rem;
+        font-weight: 200;
+        text-align: center;
+        height: 5rem;
+        width: 90%;
+        margin-top: 3rem;
+        align-self: center;
+        color: gray;
+    }
+
+    .SpanTitulo_Home{
+        font-weight: bold;
+        font-size: 2rem;
+        color: var(--color--principal--);
     }
 }

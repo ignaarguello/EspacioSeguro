@@ -3,10 +3,10 @@
     /* Principal */
     #ContenedorPrincipal_PageHome {
         height: 100vh;
-        background-image: url('/images/fondo-4.png');
+     /*    background-image: url('/images/fondo-4.png');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: fixed; */
     }
 
     /* Vista 1 */
@@ -15,12 +15,10 @@
         flex-direction: column;
         width: 100%;
         min-height: 100vh;
-        background-image: url('/images/fondo-4.png');
+       /*  background-image: url('/images/fondo-4.png');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
-        background-blend-mode: multiply;
-        background-color: rgba(0, 0, 0, 0.553);
+        background-attachment: fixed; */
     }
 
     /* Ambos Subcontenedores */
@@ -43,7 +41,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-blend-mode: multiply;
     }
 
     /* Logo */
@@ -108,7 +105,7 @@
     #PieDePagina_Home_S2 {
         display: flex;
         gap: 1rem;
-        margin-top: 2rem;
+        margin-top: 0rem;
     }
 
     /* Iconos de las redes sociales */
@@ -165,20 +162,25 @@
         min-height: 100vh;
     }
 
+    /* Vista 1 */
     #Contenedor-Vista1_PageHome {
         display: flex;
+        flex-direction: row;
         width: 100%;
         min-height: 100vh;
-        background-image: url('/images/fondo-4.png');
+        background-image: url('/images/fondo-2.png');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        background: none;
     }
 
+    /* Vista 2 */
     #Contenedor-Vista2_PageHome {
+        background-color: #F5F3F0;
         min-height: 85vh;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -190,62 +192,85 @@
 
     /* 1 */
     .SubContenendores:nth-child(1) {
-        width: 45%;
-        background-blend-mode: multiply;
-        background-color: rgba(0, 0, 0, 0.553);
+        width: 70%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    /* Navbar */
+    #Navegacion_Home{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
         align-items: center;
+    }
+
+    /* Logo Principal */
+    #LogoPrincipal_Home {
+        width: 6rem;
+        height: 6rem;
+        margin-top: 0rem;
+        border: 2px solid gainsboro;
+        margin: 1rem;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    /* Titulo de la marca */
+    #TituloMarca_Home {
+        font-size: 2.8rem;
+        font-weight: 100;
+        /* font-family: var(--font--principal); */
+        color: var(--color--principal--);
+        text-align: center;
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+    /* Lista de Navegacion */
+    #ListaNavegacion_Home {
+        display: flex;
+        gap: 1rem;
+        margin-left: 0rem;
+        cursor: pointer;
+    }
+
+    #Con_ContenidoPrincipal_Home_S2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: .4rem;
+        align-items: flex-start;
+        cursor: pointer;
     }
 
     /* 2 */
     .SubContenendores:nth-child(2) {
-        width: 55%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-blend-mode: multiply;
+        background-image: url('/images/fondo-2.png');
+        background-size: cover;
+        background-position: -280px;
     }
 
-    #LogoPrincipal_Home {
-        width: 18rem;
-        height: 18rem;
-    }
-
-    #TituloEspacioDeAyuda {
-        color: gainsboro;
-        margin-top: 1rem;
-        font-weight: 100;
-        font-size: 2rem;
-    }
-
-    #Con_ContenidoPrincipal_Home_S2 {
-        width: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: .4rem;
-        align-items: flex-start;
-        background-color: rgba(0, 0, 0, 0.653);
-        cursor: pointer;
-    }
-
-    #TituloQuienesSomos {
-        font-size: 3.2rem;
-        font-weight: 300;
-        color: var(--color--principal--);
-        margin: 1.5rem 0 1rem 1rem;
-        text-align: center;
-    }
 
     #ParrafoAcercaDeNosotros {
         font-size: 1.1rem;
-        color: whitesmoke;
+        color: gray;
         line-height: 2rem;
         font-weight: 300;
-        margin: .3rem 1rem 1rem 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        font-family: var(--font--principal);
+        padding: 2rem;
     }
 
     #PieContenedor_Home_S2 {
@@ -285,7 +310,7 @@
     }
 
     .TituloIntroductorio {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 200;
         text-align: center;
         height: 5rem;
@@ -293,11 +318,13 @@
         margin-top: 3rem;
         align-self: center;
         color: gray;
+        font-family: var(--font--principal);
     }
 
     .SpanTitulo_Home {
-        font-weight: bold;
-        font-size: 2rem;
+        font-weight:100;
+        font-size: 1.6rem;
         color: var(--color--principal--);
+        font-family: var(--font--principal);
     }
 }

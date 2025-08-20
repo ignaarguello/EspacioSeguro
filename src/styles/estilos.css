@@ -11,7 +11,7 @@
   #Vista-1_Home {
     /* border: 2px solid red; */
     min-height: 100vh;
-    background-image: url("./images/generales/fondo-1.png");
+    background-image: url("/images/generales/fondo-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -300px;
@@ -30,7 +30,6 @@
   }
   /* Contenedor Grid de imagenes */
   .grid-container {
-    margin-top: 2rem;
     padding: 0.5rem;
     width: 100%;
     display: -ms-grid;
@@ -90,7 +89,7 @@
   #Vista-1_Home {
     /* border: 2px solid mediumspringgreen; */
     height: 100vh;
-    background-image: url("./images/generales/fondo-1.png");
+    background-image: url("/images/generales/fondo-1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -45px;

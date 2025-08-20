@@ -138,7 +138,7 @@
     /* 2 filas, su altura se ajusta al contenido */
     gap: 10px;
     /*  */
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
   /* Imagenes Grid */
   .imagen {
@@ -204,10 +204,13 @@
     color: black;
     border-radius: 30px;
     font-size: 15px;
+    font-weight: 500;
+    margin-top: .5rem;
   }
   /* Boton de Accion - 1 */
   .BotonesAccion_Vista1:nth-child(1) {
     background-color: #BBD497;
+    text-decoration: none;
   }
   /* Boton de Accion - 1 */
   .BotonesAccion_Vista1:nth-child(2) {

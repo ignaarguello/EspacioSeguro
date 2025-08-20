@@ -4,13 +4,41 @@
   #Vista-2_Home {
     /*    border: 2px solid red; */
     height: 100vh;
-    padding: 1rem;
+  }
+
+  /* SubContenedor Principal */
+  #SubContenedorPrincipal {
+    /*   border: 5px solid green; */
+    display: flex;
+    flex-direction: column;
   }
 
   /* Titulo Proposito */
   #TituloProposito {
-    font-weight: 300;
     text-align: center;
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
+
+  /* Contenedor Titulos */
+  #ContenedorTitulosPrincipal_V2 {
+    /* border: 2px solid slateblue; */
+    height: max-content;
+    padding: 1.5rem 1rem;
+  }
+
+  /* Titulo - Un lugar Seguro  */
+  #TituloUnLugarSeguro {
+    /* border: 2px solid gold; */
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  /* Contenedor Iconos */
+  #ContenedorIconos_V2 {
+    /* border: 2px solid lightcoral; */
+    height: 50vh;
   }
 }
 
@@ -20,14 +48,42 @@
   #Vista-2_Home {
     /*     border: 2px solid chocolate; */
     height: 100vh;
-    padding: 1rem;
+  }
+
+  /* SubContenedor Principal */
+  #SubContenedorPrincipal {
+    /*   border: 5px solid green; */
+    flex-direction: row;
+  }
+
+  /* Contenedor Titulos */
+  #ContenedorTitulosPrincipal_V2 {
+    /* border: 2px solid slateblue; */
+    padding: 3rem;
+    width: 50%;
+    height: 90vh;
+  }
+
+  /* Contenedor Iconos */
+  #ContenedorIconos_V2 {
+   /*  border: 2px solid lightcoral; */
+    width: 50%;
+    height: 90vh;
   }
 
   /* Titulo Proposito */
   #TituloProposito {
-    margin-top: 1rem;
+    margin: 1rem 0;
     text-align: center;
     font-weight: 300;
     font-size: 2.8rem;
+  }
+
+  /* Titulo - Un lugar Seguro  */
+  #TituloUnLugarSeguro {
+    /* border: 2px solid gold; */
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-top: 2rem;
   }
 }

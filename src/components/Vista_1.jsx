@@ -5,6 +5,10 @@ export default function Vista_1() {
         <div id='Vista-1_Home'>
             <div id='ContenedorTitulosPrincipales'>
                 <h2 id='TituloPazOnline'>Tu espacio de charla online</h2>
+                <div id='ContenedorBotonesAccion'>
+                    <span className="BotonesAccion_Vista1">Quiero hablar</span>
+                    <span className="BotonesAccion_Vista1">Sobre nosotros</span>
+                </div>
             </div>
             {/* Contenedor Imagen */}
             <div className='grid-container'>

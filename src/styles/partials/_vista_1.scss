@@ -15,12 +15,10 @@
   #ContenedorTitulosPrincipales {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
   }
 
   /* Contenedor Grid de imagenes */
   .grid-container {
-    padding: 0.5rem;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columnas de igual ancho */
@@ -63,11 +61,13 @@
    /*  border: 2px solid brown; */
     margin-top: 10px;
     display: flex;
-    gap: 10px;
+    justify-content: space-evenly;
+    gap: 5px;
   }
 
   /* Botones de Accion */
   .BotonesAccion_Vista1{
+    /* border: 2px solid red; */
     width: 50%;
     height: 3em;
     display: flex;

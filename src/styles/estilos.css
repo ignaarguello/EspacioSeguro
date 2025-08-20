@@ -2,7 +2,7 @@
 @media screen and (min-width: 360px) {
   /* Principal */
   #ContenedorPrincipal_PageHome {
-    height: 100vh;
+    min-height: 100vh;
     /*    background-image: url('/images/fondo-4.png');
         background-size: cover;
         background-position: center;
@@ -150,7 +150,7 @@
   }
   /* Vista 2 */
   #Contenedor-Vista2_PageHome {
-    min-height: 70vh;
+    height: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -194,7 +194,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 100vh;
   }
   /* Vista 1 */
   #Contenedor-Vista1_PageHome {
@@ -215,8 +214,7 @@
   }
   /* Vista 2 */
   #Contenedor-Vista2_PageHome {
-    background-color: #F5F3F0;
-    min-height: 85vh;
+    background-color: #e1dfda;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -224,12 +222,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    height: 2rem;
   }
   /* Ambos */
   .SubContenendores {
@@ -332,6 +325,9 @@
     background-image: url("/images/fondo-2.png");
     background-size: cover;
     background-position: -280px;
+    z-index: 20;
+    position: absolute;
+    right: 0;
   }
   #ParrafoAcercaDeNosotros {
     font-size: 1.1rem;
@@ -365,11 +361,11 @@
   #PieDePagina_Home_S2 {
     position: absolute;
     top: 92vh;
-    right: 3vh;
+    right: 2vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: .8rem;
+    gap: .5rem;
   }
   .IconoRedSocial_Home {
     color: white;
@@ -384,73 +380,94 @@
             transform: scale(1.1);
   }
   .TituloIntroductorio {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 200;
     text-align: center;
-    height: 5rem;
-    width: 90%;
-    margin-top: 3rem;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
     color: gray;
     font-family: var(--font--principal);
+    height: 1rem;
   }
   .SpanTitulo_Home {
-    font-weight: 100;
-    font-size: 1.6rem;
+    font-weight: 300;
+    font-size: 1.8rem;
     color: var(--color--principal--);
     font-family: var(--font--principal);
+    height: 1rem;
   }
 }
 
 /* Page Home */
+/* Mobile */
 @media screen and (min-width: 360px) {
-  #ContenedorGeneral_BannerImages {
+  /* Contenedor General */
+  #ContenedorNavbar {
+    border: 2px solid seagreen;
+    width: 100%;
+    padding: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    /* Posicionamiento Horizontal */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .ImageGrid {
+  /* LogoBrand */
+  #EspacioSeguroBrand {
     width: 4rem;
-    height: 15rem;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-transition: .6s ease-in-out;
-    transition: .6s ease-in-out;
+    height: 4rem;
   }
-  .ImageGrid:hover {
-    width: 8rem;
+  /* Titulo - Espacio Seguro */
+  #TituloEspacioSeguro {
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+    display: none;
+    /* Ocultamiento en mobile */
   }
-}
-
-@media screen and (min-width: 1440px) {
-  #ContenedorGeneral_BannerImages {
-    width: 55%;
-    height: 25rem;
-    justify-self: center;
-    margin-top: 1rem;
+  /* Contenedor - Links de navegacion */
+  #ContenedorLinksNavegacion {
+    /* border: 2px solid greenyellow; */
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .ImageGrid {
-    width: 5rem;
-    -o-object-fit: cover;
-       object-fit: cover;
+  /* Navegacion Link */
+  .NavegacionLink {
     cursor: pointer;
-    -webkit-transition: .6s ease-in-out;
-    transition: .6s ease-in-out;
-  }
-  .ImageGrid:hover {
-    width: 12rem;
+    font-size: 11px;
   }
 }
 
-/* Banner Images */
+/* Desktop  */
+@media screen and (min-width: 1280px) {
+  /* Contenedor General */
+  #ContenedorNavbar {
+    border: 2px solid blue;
+    padding: 15px;
+  }
+  /* LogoBrand */
+  #EspacioSeguroBrand {
+    width: 12rem;
+    height: 12rem;
+  }
+  /* Contenedor - Links de navegacion */
+  #ContenedorLinksNavegacion {
+    /* border: 2px solid greenyellow; */
+    margin-left: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+/* Navbar */
 /*# sourceMappingURL=estilos.css.map */

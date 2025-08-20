@@ -122,11 +122,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0.5rem;
   }
   /* Contenedor Grid de imagenes */
   .grid-container {
-    padding: 0.5rem;
     width: 100%;
     display: -ms-grid;
     display: grid;
@@ -185,10 +183,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 5px;
   }
   /* Botones de Accion */
   .BotonesAccion_Vista1 {
+    /* border: 2px solid red; */
     width: 50%;
     height: 3em;
     display: -webkit-box;
@@ -344,18 +346,67 @@
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    padding: 1.5rem 1rem;
-  }
-  /* Titulo - Un lugar Seguro  */
-  #TituloUnLugarSeguro {
-    /* border: 2px solid gold; */
-    font-size: 2.5rem;
-    font-weight: 500;
+    margin-top: 1rem;
   }
   /* Contenedor Iconos */
   #ContenedorIconos_V2 {
     /* border: 2px solid lightcoral; */
     height: 50vh;
+  }
+  /* Contenedor Titulo - 1 */
+  .ContenedorTituloIndividiaul_V2:nth-child(1) {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  /* Contenedor Titulo - 2 */
+  .ContenedorTituloIndividiaul_V2:nth-child(2) {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  /* Contenedor Titulo - 3 */
+  .ContenedorTituloIndividiaul_V2:nth-child(3) {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  /* Titulo - Un lugar Seguro  */
+  #TituloUnLugarSeguro {
+    /* border: 2px solid gold; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: block;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+  /* Titulo - Un lugar Seguro - 1  */
+  .TituloUnLugarSeguro-1 {
+    background-color: #BBD497;
+    color: white;
+    padding: 3rem;
+  }
+  /* Titulo - Un lugar Seguro - 2  */
+  .TituloUnLugarSeguro-2 {
+    background-color: black;
+    color: white;
+    padding: 3rem;
+  }
+  /* Titulo - Un lugar Seguro - 3  */
+  .TituloUnLugarSeguro-3 {
+    background-color: #BBD497;
+    color: white;
+    padding: 3rem;
   }
 }
 
@@ -377,9 +428,10 @@
   /* Contenedor Titulos */
   #ContenedorTitulosPrincipal_V2 {
     /* border: 2px solid slateblue; */
-    padding: 3rem;
+    padding: 0rem;
     width: 50%;
     height: 90vh;
+    margin-top: 3rem;
   }
   /* Contenedor Iconos */
   #ContenedorIconos_V2 {
@@ -394,12 +446,58 @@
     font-weight: 300;
     font-size: 2.8rem;
   }
+  /* Contenedor Titulo - 1 */
+  .ContenedorTituloIndividiaul_V2:nth-child(1) {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  /* Contenedor Titulo - 2 */
+  .ContenedorTituloIndividiaul_V2:nth-child(2) {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  /* Contenedor Titulo - 3 */
+  .ContenedorTituloIndividiaul_V2:nth-child(3) {
+    width: 100vw;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
   /* Titulo - Un lugar Seguro  */
   #TituloUnLugarSeguro {
     /* border: 2px solid gold; */
-    font-size: 3.5rem;
-    font-weight: 300;
-    margin-top: 2rem;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+    padding: 2rem;
+  }
+  /* Titulo - Un lugar Seguro - 1  */
+  .TituloUnLugarSeguro-1 {
+    background-color: #BBD497;
+    color: white;
+  }
+  /* Titulo - Un lugar Seguro - 2  */
+  .TituloUnLugarSeguro-2 {
+    background-color: black;
+    color: white;
+  }
+  /* Titulo - Un lugar Seguro - 3  */
+  .TituloUnLugarSeguro-3 {
+    background-color: #BBD497;
+    color: white;
   }
 }
 

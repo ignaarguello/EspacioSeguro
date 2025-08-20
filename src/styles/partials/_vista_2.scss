@@ -1,0 +1,33 @@
+/* Mobile */
+@media screen and (min-width: 360px) {
+  /* Vista 2 */
+  #Vista-2_Home {
+    /*    border: 2px solid red; */
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  /* Titulo Proposito */
+  #TituloProposito {
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+/* Desktop  */
+@media screen and (min-width: 1280px) {
+  /* Vista 2 */
+  #Vista-2_Home {
+    /*     border: 2px solid chocolate; */
+    height: 100vh;
+    padding: 1rem;
+  }
+
+  /* Titulo Proposito */
+  #TituloProposito {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.8rem;
+  }
+}

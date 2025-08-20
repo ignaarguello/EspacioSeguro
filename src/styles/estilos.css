@@ -6,7 +6,103 @@
   #ContenedorPrincipal_PageHome {
     /* border: 5px solid khaki; */
   }
-  /* ---- */
+}
+
+/* Desktop  */
+/* Page Home */
+/* Mobile */
+@media screen and (min-width: 360px) {
+  /* Contenedor General */
+  #ContenedorNavbar {
+    /* border: 2px solid seagreen; */
+    width: 100%;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Posicionamiento Horizontal */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* LogoBrand */
+  #EspacioSeguroBrand {
+    width: 4rem;
+    height: 4rem;
+  }
+  /* Titulo - Espacio Seguro */
+  #TituloEspacioSeguro {
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+    display: none;
+    /* Ocultamiento en mobile */
+  }
+  /* Contenedor - Links de navegacion */
+  #ContenedorLinksNavegacion {
+    /* border: 2px solid greenyellow; */
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  /* Navegacion Link */
+  .NavegacionLink {
+    cursor: pointer;
+    font-size: 11px;
+  }
+}
+
+/* Desktop  */
+@media screen and (min-width: 1280px) {
+  /* Contenedor General */
+  #ContenedorNavbar {
+    /* border: 2px solid blue; */
+    padding: 18px;
+  }
+  /* LogoBrand */
+  #EspacioSeguroBrand {
+    width: 8rem;
+    height: 8rem;
+    border: 1px dotted gainsboro;
+    border-radius: 50%;
+  }
+  /* Titulo - Espacio Seguro */
+  #TituloEspacioSeguro {
+    /* border: 2px solid green; */
+    display: inline;
+    /* Volvemos a mostrarlo en la interfaz */
+    width: 30em;
+    font-weight: 600;
+    font-size: 19px;
+    margin-left: 10px;
+  }
+  /* Contenedor - Links de navegacion */
+  #ContenedorLinksNavegacion {
+    /* border: 2px solid greenyellow; */
+    margin-left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  /* Navegacion Link */
+  .NavegacionLink {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+/* Navbar */
+/* Mobile */
+@media screen and (min-width: 360px) {
   /* Contenedor Vista - 1 */
   #Vista-1_Home {
     /* border: 2px solid red; */
@@ -177,96 +273,38 @@
   }
 }
 
-/* Page Home */
+/* Vista 1 */
 /* Mobile */
 @media screen and (min-width: 360px) {
-  /* Contenedor General */
-  #ContenedorNavbar {
-    /* border: 2px solid seagreen; */
-    width: 100%;
-    padding: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    /* Posicionamiento Horizontal */
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  /* Vista 2 */
+  #Vista-2_Home {
+    /*    border: 2px solid red; */
+    height: 100vh;
+    padding: 1rem;
   }
-  /* LogoBrand */
-  #EspacioSeguroBrand {
-    width: 4rem;
-    height: 4rem;
-  }
-  /* Titulo - Espacio Seguro */
-  #TituloEspacioSeguro {
-    font-weight: 400;
-    margin-left: 5px;
-    font-size: 12px;
-    display: none;
-    /* Ocultamiento en mobile */
-  }
-  /* Contenedor - Links de navegacion */
-  #ContenedorLinksNavegacion {
-    /* border: 2px solid greenyellow; */
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  /* Navegacion Link */
-  .NavegacionLink {
-    cursor: pointer;
-    font-size: 11px;
+  /* Titulo Proposito */
+  #TituloProposito {
+    font-weight: 300;
+    text-align: center;
   }
 }
 
 /* Desktop  */
 @media screen and (min-width: 1280px) {
-  /* Contenedor General */
-  #ContenedorNavbar {
-    /* border: 2px solid blue; */
-    padding: 18px;
+  /* Vista 2 */
+  #Vista-2_Home {
+    /*     border: 2px solid chocolate; */
+    height: 100vh;
+    padding: 1rem;
   }
-  /* LogoBrand */
-  #EspacioSeguroBrand {
-    width: 8rem;
-    height: 8rem;
-    border: 1px dotted gainsboro;
-    border-radius: 50%;
-  }
-  /* Titulo - Espacio Seguro */
-  #TituloEspacioSeguro {
-    /* border: 2px solid green; */
-    display: inline;
-    /* Volvemos a mostrarlo en la interfaz */
-    width: 30em;
-    font-weight: 600;
-    font-size: 19px;
-    margin-left: 10px;
-  }
-  /* Contenedor - Links de navegacion */
-  #ContenedorLinksNavegacion {
-    /* border: 2px solid greenyellow; */
-    margin-left: 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 2rem;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  /* Navegacion Link */
-  .NavegacionLink {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
+  /* Titulo Proposito */
+  #TituloProposito {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.8rem;
   }
 }
 
-/* Navbar */
+/* Vista 2 */
 /*# sourceMappingURL=estilos.css.map */

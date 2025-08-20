@@ -26,6 +26,7 @@
     grid-template-columns: 1fr 1fr; /* 2 columnas de igual ancho */
     grid-template-rows: auto auto; /* 2 filas, su altura se ajusta al contenido */
     gap: 10px; /*  */
+    margin-top: 5rem;
   }
 
   /* Imagenes Grid */
@@ -55,6 +56,37 @@
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 600;
     font-size: 22px;
+  }
+
+  /* Contenedor de Botones de accion principal */
+  #ContenedorBotonesAccion{
+   /*  border: 2px solid brown; */
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+
+  /* Botones de Accion */
+  .BotonesAccion_Vista1{
+    width: 50%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    border-radius: 30px;
+    font-size: 15px;
+  }
+
+  /* Boton de Accion - 1 */
+  .BotonesAccion_Vista1:nth-child(1){
+    background-color: #BBD497;
+  }
+
+  /* Boton de Accion - 1 */
+  .BotonesAccion_Vista1:nth-child(2){
+    background-color: #BBD497;
   }
 }
 

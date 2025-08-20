@@ -1,156 +1,24 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+/* Mobile */
 @media screen and (min-width: 360px) {
-  /* Principal */
+  /* Contenedor General */
   #ContenedorPrincipal_PageHome {
+    /* border: 5px solid khaki; */
+  }
+  /* ---- */
+  /* Contenedor Vista - 1 */
+  #Vista-1_Home {
+    /* border: 2px solid red; */
     min-height: 100vh;
-    /*    background-image: url('/images/fondo-4.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed; */
-  }
-  /* Vista 1 */
-  #Contenedor-Vista1_PageHome {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    /*  background-image: url('/images/fondo-4.png');
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed; */
-  }
-  /* Ambos Subcontenedores */
-  .SubContenendores {
-    height: 100%;
-    width: 100%;
-  }
-  /* Subcontenedor 1 */
-  .SubContenendores:nth-child(1) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  /* Subcontenedor 2 */
-  .SubContenendores:nth-child(2) {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  /* Logo */
-  #LogoPrincipal_Home {
-    width: 10rem;
-    height: 10rem;
-    margin-top: 1rem;
-  }
-  /* Titulo - Espacio de Ayuda */
-  #TituloEspacioDeAyuda {
-    display: none;
-  }
-  /* Contenedor de Texto - Titulo - Quienes Somos */
-  #Con_ContenidoPrincipal_Home_S2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 1rem;
-    color: gainsboro;
-  }
-  /* Titulo Quienes Somos */
-  #TituloQuienesSomos {
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--color--principal--);
-    margin: 1rem 0 0rem 1rem;
-    text-align: center;
-  }
-  /* Parrafo principal */
-  #ParrafoAcercaDeNosotros {
-    font-size: 1.1rem;
-    color: whitesmoke;
-    line-height: 2rem;
-    font-weight: 300;
-    text-align: center;
-  }
-  /* Contenedor - La depresion y yo - Copyright */
-  #PieContenedor_Home_S2 {
-    background-color: rgba(0, 0, 0, 0.66);
-    width: 100%;
-    height: 5rem;
-    margin-top: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: whitesmoke;
-  }
-  /* Subtitulo de copyright */
-  #Subtitulo_LaDepresion-Yo {
-    font-size: .9rem;
-    font-weight: 200;
-  }
-  /* Contenedor de los iconos */
-  #PieDePagina_Home_S2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 1rem;
-    margin-top: 0rem;
-  }
-  /* Iconos de las redes sociales */
-  .IconoRedSocial_Home {
+    background-image: url("./images/generales/fondo-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -300px;
     color: white;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-    -webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
   }
-  .IconoRedSocial_Home:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  /* Vista 2 */
-  #Contenedor-Vista2_PageHome {
-    height: 70vh;
+  /* Contenedor de los titulos principales */
+  #ContenedorTitulosPrincipales {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -158,241 +26,155 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 3rem;
+    padding: 0.5rem;
   }
-  /* Titulo en general */
-  .TituloIntroductorio {
-    font-size: .9rem;
-    font-weight: 200;
-    text-align: center;
-    height: 3rem;
-    width: 90%;
-    color: gray;
-  }
-  /* Titulo en general */
-  .TituloIntroductorio:nth-child(1) {
+  /* Contenedor Grid de imagenes */
+  .grid-container {
     margin-top: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    /* 2 columnas de igual ancho */
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    /* 2 filas, su altura se ajusta al contenido */
+    gap: 10px;
+    /*  */
   }
-  /* Span */
-  .SpanTitulo_Home {
-    font-weight: bold;
-    font-size: 1rem;
-    color: var(--color--principal--);
+  /* Imagenes Grid */
+  .imagen {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* Para que la imagen cubra el espacio sin distorsionarse */
+    /* border-radius: 10px; */
+    cursor: pointer;
+    -webkit-filter: grayscale(0.7);
+            filter: grayscale(0.7);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .imagen:hover {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    /* Elimina el filtro al pasar el mouse */
+    -webkit-transition: -webkit-filter 0.6s ease;
+    transition: -webkit-filter 0.6s ease;
+    transition: filter 0.6s ease;
+    transition: filter 0.6s ease, -webkit-filter 0.6s ease;
+    /* Transición suave */
+  }
+  /* Imagen de la segunda fila  */
+  .imagen-completa {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    /* Ocupa desde la línea 1 hasta la 3, abarcando 2 columnas */
+  }
+  /* Titulo Paz Online */
+  #TituloPazOnline {
+    margin-top: 3rem;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
   }
 }
 
-/* 1440px  */
-@media screen and (min-width: 1440px) {
-  #ContenedorPrincipal_PageHome {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  /* Vista 1 */
-  #Contenedor-Vista1_PageHome {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("/images/fondo-2.png");
+/* Desktop  */
+@media screen and (min-width: 1280px) {
+  /* Contenedor Vista - 1 */
+  #Vista-1_Home {
+    /* border: 2px solid mediumspringgreen; */
+    height: 100vh;
+    background-image: url("./images/generales/fondo-1.png");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background: none;
-  }
-  /* Vista 2 */
-  #Contenedor-Vista2_PageHome {
-    background-color: #e1dfda;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    height: 2rem;
-  }
-  /* Ambos */
-  .SubContenendores {
-    height: 100%;
-  }
-  /* 1 */
-  .SubContenendores:nth-child(1) {
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  /* Navbar */
-  #Navegacion_Home {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  /* Logo Principal */
-  #LogoPrincipal_Home {
-    width: 6rem;
-    height: 6rem;
-    margin-top: 0rem;
-    border: 2px solid gainsboro;
-    margin: 1rem;
-    border-radius: 50%;
-    padding: 5px;
-    cursor: pointer;
-  }
-  /* Titulo de la marca */
-  #TituloMarca_Home {
-    font-size: 2.8rem;
-    font-weight: 100;
-    /* font-family: var(--font--principal); */
-    color: var(--color--principal--);
-    text-align: center;
-    width: 100%;
-    margin-top: 6rem;
-  }
-  /* Lista de Navegacion */
-  #ListaNavegacion_Home {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 1rem;
-    margin-left: 0rem;
-    cursor: pointer;
-  }
-  #Con_ContenidoPrincipal_Home_S2 {
-    width: 100%;
-    height: 100%;
-    margin-top: 0rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: .4rem;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    cursor: pointer;
-  }
-  /* 2 */
-  .SubContenendores:nth-child(2) {
-    width: 30%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-image: url("/images/fondo-2.png");
-    background-size: cover;
-    background-position: -280px;
-    z-index: 20;
-    position: absolute;
-    right: 0;
-  }
-  #ParrafoAcercaDeNosotros {
-    font-size: 1.1rem;
-    color: gray;
-    line-height: 2rem;
-    font-weight: 300;
-    margin: 2rem 1rem 1rem 1rem;
-    font-family: var(--font--principal);
-    padding: 2rem;
-  }
-  #PieContenedor_Home_S2 {
-    background-color: rgba(0, 0, 0, 0.66);
-    width: 100%;
-    height: 5rem;
-    margin-top: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: whitesmoke;
-  }
-  #Subtitulo_LaDepresion-Yo {
-    font-size: .9rem;
-    font-weight: 200;
-  }
-  #PieDePagina_Home_S2 {
-    position: absolute;
-    top: 92vh;
-    right: 2vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: .5rem;
-  }
-  .IconoRedSocial_Home {
+    background-repeat: no-repeat;
+    background-position-y: -45px;
+    background-position-x: 0px;
     color: white;
-    width: 2.7rem;
-    height: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  /* Contenedor de los titulos principales */
+  #ContenedorTitulosPrincipales {
+    /*  border: 2px solid sandybrown; */
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* Contenedor Grid de imagenes */
+  .grid-container {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.44);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    /* 2 columnas de igual ancho */
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    /* 2 filas, su altura se ajusta al contenido */
+    width: 50%;
+    padding: 5rem;
+    gap: 10px;
+    /*  */
+  }
+  /* Imagenes Grid */
+  .imagen {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    /* Para que la imagen cubra el espacio sin distorsionarse */
+    /* border-radius: 10px; */
     cursor: pointer;
-    -webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
+    -webkit-filter: grayscale(0.7);
+            filter: grayscale(0.7);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
-  .IconoRedSocial_Home:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+  .imagen:hover {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    /* Elimina el filtro al pasar el mouse */
+    -webkit-transition: -webkit-filter 0.6s ease;
+    transition: -webkit-filter 0.6s ease;
+    transition: filter 0.6s ease;
+    transition: filter 0.6s ease, -webkit-filter 0.6s ease;
+    /* Transición suave */
   }
-  .TituloIntroductorio {
-    font-size: 1.1rem;
-    font-weight: 200;
-    text-align: center;
-    color: gray;
-    font-family: var(--font--principal);
-    height: 1rem;
+  /* Imagen de la segunda fila  */
+  .imagen-completa {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    /* Ocupa desde la línea 1 hasta la 3, abarcando 2 columnas */
   }
-  .SpanTitulo_Home {
-    font-weight: 300;
-    font-size: 1.8rem;
-    color: var(--color--principal--);
-    font-family: var(--font--principal);
-    height: 1rem;
+  /* Titulo Paz Online */
+  #TituloPazOnline {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin: 0;
+    font-weight: 600;
+    font-size: 3rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -401,7 +183,7 @@
 @media screen and (min-width: 360px) {
   /* Contenedor General */
   #ContenedorNavbar {
-    border: 2px solid seagreen;
+    /* border: 2px solid seagreen; */
     width: 100%;
     padding: 5px;
     display: -webkit-box;
@@ -447,18 +229,30 @@
 @media screen and (min-width: 1280px) {
   /* Contenedor General */
   #ContenedorNavbar {
-    border: 2px solid blue;
-    padding: 15px;
+    /* border: 2px solid blue; */
+    padding: 18px;
   }
   /* LogoBrand */
   #EspacioSeguroBrand {
-    width: 12rem;
-    height: 12rem;
+    width: 8rem;
+    height: 8rem;
+    border: 1px dotted gainsboro;
+    border-radius: 50%;
+  }
+  /* Titulo - Espacio Seguro */
+  #TituloEspacioSeguro {
+    /* border: 2px solid green; */
+    display: inline;
+    /* Volvemos a mostrarlo en la interfaz */
+    width: 30em;
+    font-weight: 600;
+    font-size: 19px;
+    margin-left: 10px;
   }
   /* Contenedor - Links de navegacion */
   #ContenedorLinksNavegacion {
     /* border: 2px solid greenyellow; */
-    margin-left: 40%;
+    margin-left: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -466,6 +260,12 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  /* Navegacion Link */
+  .NavegacionLink {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
   }
 }
 

@@ -106,8 +106,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columnas de igual ancho */
     grid-template-rows: auto auto; /* 2 filas, su altura se ajusta al contenido */
-    gap: 10px; /*  */
-    margin-top: 2rem;
+    gap: 10px;
+    margin-top: 1.5rem;
   }
   /* Imagenes Grid */
   .imagen {

@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Vista_1() {
 
     const numeroWhatsApp = '5491136303672';

@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
-
 /* Mobile */
 @media screen and (min-width: 360px) {
   /* Contenedor General */
@@ -108,8 +106,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 columnas de igual ancho */
     grid-template-rows: auto auto; /* 2 filas, su altura se ajusta al contenido */
-    gap: 10px; /*  */
-    margin-top: 2rem;
+    gap: 10px;
+    margin-top: 1.5rem;
   }
   /* Imagenes Grid */
   .imagen {

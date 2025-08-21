@@ -8,6 +8,7 @@ export default function Vista_3() {
         { value: "c", title: "¿Como me ayudaria este espacio?", text: "Some value 3..." },
     ]
 
+
     return (
         <div id="Vista-3">
             <Accordion.Root 

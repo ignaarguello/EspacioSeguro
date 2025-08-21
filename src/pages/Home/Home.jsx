@@ -1,6 +1,7 @@
-import React from 'react'
+//Estilos
+import '../../styles/estilos.css'
 
-//ReactIcons
+//React Icons
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
@@ -8,9 +9,8 @@ import { FaInstagram } from "react-icons/fa";
 import Navbar from '../../components/Navbar';
 import Vista_1 from '../../components/Vista_1';
 import Vista_2 from '../../components/Vista_2';
+import Vista_3 from '../../components/Vista_3';
 
-//Estilos
-import '../../styles/estilos.css'
 
 export default function Home() {
     return (
@@ -18,6 +18,7 @@ export default function Home() {
             <Navbar />
             <Vista_1 />
             <Vista_2 />
+            <Vista_3 />
         </div>
     )
 }

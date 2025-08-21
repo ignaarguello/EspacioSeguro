@@ -89,13 +89,14 @@
 
   /* Vista 2 */
   #Vista-2_Home {
-    /*     border: 2px solid chocolate; */
-    height: 100vh;
+   /*  border: 2px solid chocolate; */
+    min-height: 100vh;
   }
 
   /* SubContenedor Principal */
   #SubContenedorPrincipal {
-    /*   border: 5px solid green; */
+    /* border: 5px solid green; */
+    min-height: 135vh;
     flex-direction: row;
   }
 
@@ -105,7 +106,7 @@
     padding: 0rem;
     width: 50%;
     height: 90vh;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   /* Contenedor Iconos */
@@ -126,7 +127,7 @@
 
   /* Contenedor Titulos - Propiedad General */
   .ContenedorTituloIndividiaul_V2 {
-   /*  border: 2px solid red; */
+    /*  border: 2px solid red; */
   }
 
 
@@ -156,7 +157,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
     padding: 2rem;
   }

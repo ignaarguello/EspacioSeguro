@@ -3,7 +3,7 @@ import React from 'react'
 export default function Vista_1() {
 
     const numeroWhatsApp = '5491136303672';
-    const mensaje = 'Hola, estoy interesado en sus servicios.';
+    const mensaje = 'Hola Veronica, estoy interesado en sus servicios.';
 
     // Codifica el mensaje para la URL
     const mensajeCodificado = encodeURIComponent(mensaje);
@@ -17,8 +17,6 @@ export default function Vista_1() {
                     <a className="BotonesAccion_Vista1" href={urlWhatsApp} target="_blank" rel="noopener noreferrer">
                         <span>Quiero hablar</span>
                     </a>
-
-
                     <span className="BotonesAccion_Vista1">Sobre nosotros</span>
                 </div>
             </div>

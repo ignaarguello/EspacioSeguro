@@ -3,9 +3,29 @@
 
     /* Contenedor Vista 3 */
     #Vista-3 {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
         height: 80vh;
+        padding: .5rem;
+    }
+
+    /* Root Accordion */
+    #AccordionRoot {
+        padding: 20rem;
+    }
+
+    /* Accordion Item */
+    #AccordionItem {
+        font-size: 20px;
+        color: green;
+        padding: 2rem;
+        cursor: pointer;
+    }
+
+    /* Accordion Text */
+    #AccordionText {
+        padding: .5rem;
+        margin-left: 1.5rem;
     }
 }
 

@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 
 
 export default function Vista_2() {
+
     // Initialize AOS (Animate On Scroll) for animations    
     useEffect(() => {
         AOS.init({
@@ -12,6 +13,7 @@ export default function Vista_2() {
             once: true,    // whether animation should only happen once
         });
     }, []);
+
     // Render the component
     return (
         <div id='Vista-2_Home'>
@@ -33,5 +35,7 @@ export default function Vista_2() {
                 </div>
             </div>
         </div>
+
+
     )
 }

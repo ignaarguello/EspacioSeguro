@@ -203,6 +203,7 @@
     width: 50%;
     padding: 5rem;
     gap: 10px; /*  */
+    margin: 0;
   }
   /* Imagenes Grid */
   .imagen {
@@ -313,12 +314,13 @@
 @media screen and (min-width: 1280px) {
   /* Vista 2 */
   #Vista-2_Home {
-    /*     border: 2px solid chocolate; */
-    height: 100vh;
+    /*  border: 2px solid chocolate; */
+    min-height: 100vh;
   }
   /* SubContenedor Principal */
   #SubContenedorPrincipal {
-    /*   border: 5px solid green; */
+    /* border: 5px solid green; */
+    min-height: 135vh;
     flex-direction: row;
   }
   /* Contenedor Titulos */
@@ -327,7 +329,7 @@
     padding: 0rem;
     width: 50%;
     height: 90vh;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   /* Contenedor Iconos */
   #ContenedorIconos_V2 {
@@ -369,7 +371,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
     padding: 2rem;
   }
@@ -389,4 +391,15 @@
     color: white;
   }
 }
-/* Vista 2 *//*# sourceMappingURL=estilos.css.map */
+/* Vista 2 */
+/* Mobile */
+@media screen and (min-width: 360px) {
+  /* Contenedor Vista 3 */
+  #Vista-3 {
+    border: 2px solid red;
+    width: 100%;
+    height: 80vh;
+  }
+}
+/* Desktop - 1280px */
+/* Vista 3 *//*# sourceMappingURL=estilos.css.map */

@@ -7,6 +7,7 @@
     /* border: 5px solid khaki; */
   }
 }
+
 /* Desktop  */
 /* Page Home */
 /* Mobile */
@@ -16,8 +17,13 @@
     /* border: 2px solid seagreen; */
     width: 100%;
     padding: 5px;
-    display: flex; /* Posicionamiento Horizontal */
-    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* Posicionamiento Horizontal */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   /* LogoBrand */
   #EspacioSeguroBrand {
@@ -29,14 +35,19 @@
     font-weight: 400;
     margin-left: 5px;
     font-size: 12px;
-    display: none; /* Ocultamiento en mobile */
+    display: none;
+    /* Ocultamiento en mobile */
   }
   /* Contenedor - Links de navegacion */
   #ContenedorLinksNavegacion {
     /* border: 2px solid greenyellow; */
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   /* Navegacion Link */
   .NavegacionLink {
@@ -44,6 +55,7 @@
     font-size: 11px;
   }
 }
+
 /* Desktop  */
 @media screen and (min-width: 1280px) {
   /* Contenedor General */
@@ -61,7 +73,8 @@
   /* Titulo - Espacio Seguro */
   #TituloEspacioSeguro {
     /* border: 2px solid green; */
-    display: inline; /* Volvemos a mostrarlo en la interfaz */
+    display: inline;
+    /* Volvemos a mostrarlo en la interfaz */
     width: 30em;
     font-weight: 600;
     font-size: 19px;
@@ -71,9 +84,13 @@
   #ContenedorLinksNavegacion {
     /* border: 2px solid greenyellow; */
     margin-left: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 2rem;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   /* Navegacion Link */
   .NavegacionLink {
@@ -82,7 +99,30 @@
     font-weight: 400;
   }
 }
+
 /* Navbar */
+/* Mobile */
+@media screen and (min-width: 360px) {
+  /* Root Accordion */
+  #AccordionRoot {
+    padding: 20rem;
+  }
+  /* Accordion Item */
+  #AccordionItem {
+    font-size: 20px;
+    color: green;
+    padding: 2rem;
+    cursor: pointer;
+  }
+  /* Accordion Text */
+  #AccordionText {
+    padding: .5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+/* Desktop - 1280px */
+/* Accordion FAQ */
 /* Mobile */
 @media screen and (min-width: 360px) {
   /* Contenedor Vista - 1 */
@@ -97,15 +137,25 @@
   }
   /* Contenedor de los titulos principales */
   #ContenedorTitulosPrincipales {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /* Contenedor Grid de imagenes */
   .grid-container {
     width: 100%;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas de igual ancho */
-    grid-template-rows: auto auto; /* 2 filas, su altura se ajusta al contenido */
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    /* 2 columnas de igual ancho */
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    /* 2 filas, su altura se ajusta al contenido */
     gap: 10px;
     margin-top: 1.5rem;
   }
@@ -114,19 +164,31 @@
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover; /* Para que la imagen cubra el espacio sin distorsionarse */
+       object-fit: cover;
+    /* Para que la imagen cubra el espacio sin distorsionarse */
     /* border-radius: 10px; */
     cursor: pointer;
-    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+            filter: grayscale(0.7);
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
   }
   .imagen:hover {
-    filter: grayscale(0); /* Elimina el filtro al pasar el mouse */
-    transition: filter 0.6s ease; /* Transición suave */
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    /* Elimina el filtro al pasar el mouse */
+    -webkit-transition: -webkit-filter 0.6s ease;
+    transition: -webkit-filter 0.6s ease;
+    transition: filter 0.6s ease;
+    transition: filter 0.6s ease, -webkit-filter 0.6s ease;
+    /* Transición suave */
   }
   /* Imagen de la segunda fila  */
   .imagen-completa {
-    grid-column: 1/3; /* Ocupa desde la línea 1 hasta la 3, abarcando 2 columnas */
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    /* Ocupa desde la línea 1 hasta la 3, abarcando 2 columnas */
   }
   /* Titulo Paz Online */
   #TituloPazOnline {
@@ -139,8 +201,12 @@
   /* Contenedor de Botones de accion principal */
   #ContenedorBotonesAccion {
     /*   border: 2px solid brown; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     gap: 10px;
     padding: 10px;
   }
@@ -149,15 +215,21 @@
     /* border: 2px solid red; */
     width: 50%;
     height: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
     color: black;
     border-radius: 30px;
     font-size: 15px;
     font-weight: 500;
-    margin-top: 0.5rem;
+    margin-top: .5rem;
   }
   /* Boton de Accion - 1 */
   .BotonesAccion_Vista1:nth-child(1) {
@@ -169,6 +241,7 @@
     background-color: #BBD497;
   }
 }
+
 /* Desktop  */
 @media screen and (min-width: 1280px) {
   /* Contenedor Vista - 1 */
@@ -181,28 +254,46 @@
     background-position-y: -45px;
     background-position-x: 0px;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   /* Contenedor de los titulos principales */
   #ContenedorTitulosPrincipales {
     /*  border: 2px solid sandybrown; */
     width: 50%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /* Contenedor Grid de imagenes */
   .grid-container {
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.44);
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columnas de igual ancho */
-    grid-template-rows: auto auto; /* 2 filas, su altura se ajusta al contenido */
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    /* 2 columnas de igual ancho */
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    /* 2 filas, su altura se ajusta al contenido */
     width: 50%;
     padding: 5rem;
-    gap: 10px; /*  */
+    gap: 10px;
+    /*  */
     margin: 0;
   }
   /* Imagenes Grid */
@@ -210,19 +301,31 @@
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover; /* Para que la imagen cubra el espacio sin distorsionarse */
+       object-fit: cover;
+    /* Para que la imagen cubra el espacio sin distorsionarse */
     /* border-radius: 10px; */
     cursor: pointer;
-    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
+            filter: grayscale(0.7);
+    -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
   }
   .imagen:hover {
-    filter: grayscale(0); /* Elimina el filtro al pasar el mouse */
-    transition: filter 0.6s ease; /* Transición suave */
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    /* Elimina el filtro al pasar el mouse */
+    -webkit-transition: -webkit-filter 0.6s ease;
+    transition: -webkit-filter 0.6s ease;
+    transition: filter 0.6s ease;
+    transition: filter 0.6s ease, -webkit-filter 0.6s ease;
+    /* Transición suave */
   }
   /* Imagen de la segunda fila  */
   .imagen-completa {
-    grid-column: 1/3; /* Ocupa desde la línea 1 hasta la 3, abarcando 2 columnas */
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    /* Ocupa desde la línea 1 hasta la 3, abarcando 2 columnas */
   }
   /* Titulo Paz Online */
   #TituloPazOnline {
@@ -233,6 +336,7 @@
     margin-left: 1.5rem;
   }
 }
+
 /* Vista 1 */
 /* Mobile */
 @media screen and (min-width: 360px) {
@@ -244,8 +348,13 @@
   /* SubContenedor Principal */
   #SubContenedorPrincipal {
     /*   border: 5px solid green; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /* Titulo Proposito */
   #TituloProposito {
@@ -257,6 +366,7 @@
   /* Contenedor Titulos */
   #ContenedorTitulosPrincipal_V2 {
     /* border: 2px solid slateblue; */
+    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
     margin-top: 1rem;
@@ -264,20 +374,27 @@
   /* Contenedor Titulo - 1 */
   .ContenedorTituloIndividiaul_V2:nth-child(1) {
     width: 100vw;
+    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
   /* Contenedor Titulo - 2 */
   .ContenedorTituloIndividiaul_V2:nth-child(2) {
     width: 100vw;
+    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   /* Contenedor Titulo - 3 */
   .ContenedorTituloIndividiaul_V2:nth-child(3) {
     width: 100vw;
+    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
@@ -310,6 +427,7 @@
     padding: 3rem;
   }
 }
+
 /* Desktop  */
 @media screen and (min-width: 1280px) {
   /* Vista 2 */
@@ -321,7 +439,10 @@
   #SubContenedorPrincipal {
     /* border: 5px solid green; */
     min-height: 135vh;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   /* Contenedor Titulos */
   #ContenedorTitulosPrincipal_V2 {
@@ -355,8 +476,12 @@
   /* Contenedor Titulo - 2 */
   .ContenedorTituloIndividiaul_V2:nth-child(2) {
     width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   /* Contenedor Titulo - 3 */
   .ContenedorTituloIndividiaul_V2:nth-child(3) {
@@ -368,9 +493,15 @@
     width: 50%;
     height: 20rem;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 2rem;
     font-weight: 400;
     padding: 2rem;
@@ -391,6 +522,7 @@
     color: white;
   }
 }
+
 /* Vista 2 */
 /* Mobile */
 @media screen and (min-width: 360px) {
@@ -399,24 +531,10 @@
     /* border: 2px solid red; */
     width: 100%;
     height: 80vh;
-    padding: 0.5rem;
-  }
-  /* Root Accordion */
-  #AccordionRoot {
-    padding: 20rem;
-  }
-  /* Accordion Item */
-  #AccordionItem {
-    font-size: 20px;
-    color: green;
-    padding: 2rem;
-    cursor: pointer;
-  }
-  /* Accordion Text */
-  #AccordionText {
-    padding: 0.5rem;
-    margin-left: 1.5rem;
+    padding: .5rem;
   }
 }
+
 /* Desktop - 1280px */
-/* Vista 3 *//*# sourceMappingURL=estilos.css.map */
+/* Vista 3 */
+/*# sourceMappingURL=estilos.css.map */

@@ -12,6 +12,7 @@ export default function AccordionFAQ() {
         { value: "e", title: "¿Se guardan mis conversaciones?", text: "No, no guardamos ninguna de tus conversaciones. Una vez que la charla finaliza, tu historial de chat se elimina por completo. De esta manera, garantizamos la total privacidad y seguridad de todo lo que compartes." },
         { value: "f", title: "¿Es Espacio Seguro una terapia online?", text: "No, Espacio Seguro no es un sustituto de la terapia profesional ni un servicio de salud mental. Somos un espacio de apoyo entre pares. Si estás pasando por un momento de crisis o necesitas ayuda profesional, te animamos a contactar a un especialista o a una línea de ayuda." },
     ]
+    
     return (
         <div>
             <Accordion.Root

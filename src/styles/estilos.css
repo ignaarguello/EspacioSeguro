@@ -128,7 +128,9 @@
 @media screen and (min-width: 360px) {
   /* Contenedor General - Footer */
   #Footer {
-    min-height: 80vh;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     background-color: var(--color--principal--);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -192,6 +194,27 @@
   .IconRedesSocial {
     width: 2rem;
     height: 2rem;
+  }
+  /* Contenedor Desarrollo Footer */
+  #ContenedorDesarrolloFooter {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    padding: 1.2rem;
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 

@@ -18,6 +18,9 @@ export default function Footer() {
         <FaInstagram className='IconRedesSocial'/>
         <FaWhatsapp className='IconRedesSocial'/>
       </div>
+      <div id='ContenedorDesarrolloFooter'>
+        <p id='TextoDesarrolloFooter'>Desarrollador por IAS. © 2025 Espacio Seguro App.</p>
+      </div>
     </div>
   )
 }

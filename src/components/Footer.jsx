@@ -15,8 +15,8 @@ export default function Footer() {
         ))}
       </div>
       <div id='ContenedorRedesSocialesFooter'>
-        <FaInstagram/>
-        <FaWhatsapp/>
+        <FaInstagram className='IconRedesSocial'/>
+        <FaWhatsapp className='IconRedesSocial'/>
       </div>
     </div>
   )

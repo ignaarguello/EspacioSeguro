@@ -37,8 +37,17 @@
     }
 
     /* Contenedor Redes Sociales */
-    #ContenedorRedesFooter{
-        border: 2px solid royalblue;
+    #ContenedorRedesSocialesFooter{
+        @include flex-row;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+        color: white;
+    }
+
+    /* Iconos Redes sociales */
+    .IconRedesSocial{
+        @include size-2rem-full;
     }
 }
 

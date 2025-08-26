@@ -173,8 +173,25 @@
     font-weight: 500;
   }
   /* Contenedor Redes Sociales */
-  #ContenedorRedesFooter {
-    border: 2px solid royalblue;
+  #ContenedorRedesSocialesFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    color: white;
+  }
+  /* Iconos Redes sociales */
+  .IconRedesSocial {
+    width: 2rem;
+    height: 2rem;
   }
 }
 

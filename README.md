@@ -24,5 +24,6 @@ Frontend:
 
 ## Android - Samsung
 <img width="359" height="777" alt="ResolucionAndroid" src="https://github.com/user-attachments/assets/a9cba589-cbcd-4201-83b5-5419e67f819e" />
-<img width="391" height="788" alt="ResolucionIPhone2" src="https://github.com/user-attachments/assets/f7a4ad05-89cb-46cc-af6c-34158607ae00" />
+<img width="359" height="777" alt="ResolucionAndroid2" src="https://github.com/user-attachments/assets/e974ff6d-d933-45e8-bc00-fe5d516b7d4c" />
+
 

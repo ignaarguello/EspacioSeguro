@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
+//Abstracts
+@import './abstract/mixins'; /* Variables */
 //Pages
+
 @import './partials/home.scss'; /* Page Home */
 
 //Components
 @import './partials/navbar.scss'; /* Navbar */
 @import './partials/accordionFAQ.scss'; /* Accordion FAQ */
+@import './partials/footer'; /* Footer */
+
 
 //Vistas
 @import './partials/vista_1'; /* Vista 1 */
 @import './partials/vista_2'; /* Vista 2 */
 @import './partials/vista_3'; /* Vista 3 */
+

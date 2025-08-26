@@ -20,7 +20,7 @@ export default function AccordionFAQ() {
                 size='lg'
                 variant={"enclosed"}
                 collapsible
-                defaultValue={["b"]
+                defaultValue={[]
                 }>
                 {items.map((item, index) => (
                     <Accordion.Item id="AccordionItem" key={index} value={item.value}>

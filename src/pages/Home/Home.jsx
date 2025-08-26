@@ -1,15 +1,12 @@
 //Estilos
 import '../../styles/estilos.css'
 
-//React Icons
-import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-
 //Componentes
 import Navbar from '../../components/Navbar';
 import Vista_1 from '../../components/Vista_1';
 import Vista_2 from '../../components/Vista_2';
 import Vista_3 from '../../components/Vista_3';
+import Footer from '../../components/Footer';
 
 
 export default function Home() {
@@ -19,6 +16,7 @@ export default function Home() {
             <Vista_1 />
             <Vista_2 />
             <Vista_3 />
+            <Footer />
         </div>
     )
 }

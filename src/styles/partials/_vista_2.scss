@@ -62,7 +62,7 @@
 
   /* Titulo - Un lugar Seguro - 1  */
   .TituloUnLugarSeguro-1 {
-    background-color: #BBD497;
+    background-color: var(--color--principal--);
     color: white;
     padding: 3rem;
   }
@@ -77,7 +77,7 @@
 
   /* Titulo - Un lugar Seguro - 3  */
   .TituloUnLugarSeguro-3 {
-    background-color: #BBD497;
+    background-color: var(--color--principal--);
     color: white;
     padding: 3rem;
 
@@ -164,7 +164,7 @@
 
   /* Titulo - Un lugar Seguro - 1  */
   .TituloUnLugarSeguro-1 {
-    background-color: #BBD497;
+    background-color: var(--color--principal--);
     color: white;
   }
 
@@ -176,7 +176,7 @@
 
   /* Titulo - Un lugar Seguro - 3  */
   .TituloUnLugarSeguro-3 {
-    background-color: #BBD497;
+    background-color: var(--color--principal--);
     color: white;
   }
 }

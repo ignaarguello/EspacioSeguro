@@ -15,7 +15,7 @@ export default function Vista_1() {
                     <a className="BotonesAccion_Vista1" href={urlWhatsApp} target="_blank" rel="noopener noreferrer">
                         <span>Quiero hablar</span>
                     </a>
-                    <span className="BotonesAccion_Vista1">Conocé más</span>
+                    <a href="#TituloFAQ" className="BotonesAccion_Vista1">Conocé más</a>
                 </div>
             </div>
             {/* Contenedor Imagen */}

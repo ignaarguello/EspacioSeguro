@@ -624,7 +624,7 @@
 /* Mobile */
 @media screen and (min-width: 360px) {
   /* Contenedor Vista 3 */
-  #Vista-3 {
+  #Vista-3_Home {
     /* border: 2px solid red; */
     width: 100%;
     min-height: 100vh;

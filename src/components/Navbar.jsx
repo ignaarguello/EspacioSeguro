@@ -6,10 +6,10 @@ export default function Navbar() {
             <img id='EspacioSeguroBrand' src="./images/logo/EspacioSeguroLogo.png" alt="" />
             <h2 id='TituloEspacioSeguro'>Espacio Seguro - Sitio Web</h2>
             <div id='ContenedorLinksNavegacion'>
-                <span className='NavegacionLink'>Home</span>
-                <span className='NavegacionLink'>Proposito</span>
-                <span className='NavegacionLink'>Conectá</span>
-                <span className='NavegacionLink'>Preguntes Frequentes(FAQ)</span>
+                <a href='#' className='NavegacionLink'>Home</a>
+                <a href='#TituloProposito' className='NavegacionLink'>Proposito</a>
+                <a href='#TituloFAQ' className='NavegacionLink'>Preguntes Frequentes (FAQ)</a>
+                <a href='#TituloProposito' className='NavegacionLink'>Conectá</a>
             </div>
         </div>
     )

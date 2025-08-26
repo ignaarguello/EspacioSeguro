@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
-  const AnchorsFooter = ['Home', 'Proposito', 'Conectá', 'Preguntas Frecuentes(FAQ)'];
+  const AnchorsFooter = ['Home', 'Proposito', 'Conectá', 'Preguntas Frecuentes (FAQ)'];
   return (
     <div id='Footer'>
       <h2 id='TituloPrincipalFooter'>Espacio Seguro App</h2>

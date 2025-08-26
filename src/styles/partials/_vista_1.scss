@@ -84,13 +84,13 @@
 
   /* Boton de Accion - 1 */
   .BotonesAccion_Vista1:nth-child(1){
-    background-color: #BBD497;
+    background-color: var(--color--principal--);
     text-decoration: none;
   }
 
   /* Boton de Accion - 1 */
   .BotonesAccion_Vista1:nth-child(2){
-    background-color: #BBD497;
+    background-color: var(--color--principal--);
   }
 }
 

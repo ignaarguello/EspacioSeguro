@@ -14,6 +14,7 @@ Frontend:
 - Vite: Un bundler de desarrollo rápido.
 
 - Chakra UI (CSS): Para un desarrollo ágil y estilizado.
+  
 
 ## Desktop
 <img width="1236" height="710" alt="ResolucionDesktop" src="https://github.com/user-attachments/assets/81b3e0f7-21a3-4efb-bf7e-ec9611120ed0" />
